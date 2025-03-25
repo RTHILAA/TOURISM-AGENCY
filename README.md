@@ -60,8 +60,8 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 For inquiries, please reach out to:
 
-- **Name** : ANASS EL HARAZI
-- **Email** : [anaswins35@gmail.com](mailto:anaswins35@gmail.com)
+- 👨🏻‍💻 **Name** : ANASS EL HARAZI
+- 📧 **Email** : [anaswins35@gmail.com](mailto:anaswins35@gmail.com)
 
 ---
 
