@@ -15,42 +15,18 @@ html {
 body {
    font-family: "Work Sans", serif;
 }
-/* Keyframes for animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 
-@keyframes slideUp {
-  from { 
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to { 
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-
-/* Navbar animations */
 .nav-bar {
   background-color: black;
   position: fixed;
   width: 100%;
   z-index: 100;
   animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .nav-bar nav {
@@ -166,6 +142,17 @@ a {
   animation: slideUp 1s ease-out 0.3s both;
 }
 
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .text h1 {
   font-size: 36px;
   letter-spacing: 5px;
@@ -225,7 +212,6 @@ a {
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
 }
 
-/* Section headings with animation */
 .about h2,
 .services h2,
 .featured h2,
@@ -306,7 +292,6 @@ p {
   box-shadow: 0 15px 40px rgba(0, 255, 255, 0.5);
 }
 
-/* Services section with enhanced animations */
 .services-content,
 .featured-content,
 .gallery-content {
@@ -344,7 +329,12 @@ p {
   color: aqua;
   transition: all 0.5s ease;
   animation: float 3s ease-in-out infinite;
-  -webkit-animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 .box-services:hover {
@@ -357,7 +347,12 @@ p {
   animation: pulse 1.5s infinite;
 }
 
-/* Featured section with animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
 .box-featured {
   width: 85%;
   height: 70vh;
@@ -439,7 +434,6 @@ p {
   box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
 }
 
-/* Gallery section with animations */
 .image-gallery {
   width: 85%;
   height: 56vh;
@@ -465,7 +459,6 @@ p {
   -o-transform: scale(1.1);
 }
 
-/* Newsletter form with animations */
 form {
   height: 10vh;
   display: flex;
@@ -507,7 +500,6 @@ form {
   transform: translateX(5px);
 }
 
-/* Footer with animations */
 .footer {
   background-color: black;
   margin-top: 10vh;
@@ -549,7 +541,6 @@ form {
   text-align: center;
 }
 
-/* Responsive adjustments */
 @media (min-width: 768px) {
   .content {
   background-attachment: fixed;
