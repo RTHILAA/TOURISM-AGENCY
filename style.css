@@ -4,12 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", serif;
+}
+
+html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: aqua black;
 }
 
+body {
+   font-family: "Work Sans", serif;
+}
 /* Keyframes for animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -44,7 +49,7 @@
   background-color: black;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   animation: fadeIn 0.8s ease-out;
 }
 
@@ -58,7 +63,7 @@
 }
 
 .nav-bar ul {
-  font-size: 3vh;
+  font-size: 16px;
   list-style: none;
   display: none;
   gap: 30px;
@@ -80,7 +85,7 @@ a {
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: -5px;
+  bottom: -2px;
   left: 0;
   background-color: aqua;
   transition: width 0.3s ease;
@@ -95,7 +100,7 @@ a {
 }
 
 .social-media {
-  font-size: 4.5vh;
+  font-size: 24px;
   display: none;
   gap: 10px;
 }
@@ -112,7 +117,7 @@ a {
 
 #bars {
   color: aqua;
-  font-size: 4.5vh;
+  font-size: 20px;
   cursor: pointer;
   display: flex;
   transition: all 0.3s ease;
@@ -120,12 +125,11 @@ a {
 
 #bars:hover {
   color: white;
-  transform: rotate(90deg);
 }
  
 .nav-bar h2 a {
   color: aqua;
-  font-size: 4.5vh;
+  font-size: 24px;
   transition: all 0.3s ease;
 }
 
@@ -133,7 +137,6 @@ a {
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
 }
 
-/* Hero section with enhanced animations */
 .content {
   min-height: 100vh;
   width: 100%;
@@ -141,7 +144,7 @@ a {
     url("IMG/main.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .text {
@@ -158,13 +161,13 @@ a {
 
 .text p {
   width: 70%;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5;
   animation: slideUp 1s ease-out 0.3s both;
 }
 
 .text h1 {
-  font-size: 50px;
+  font-size: 36px;
   letter-spacing: 5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: slideUp 0.8s ease-out 0.1s both;
@@ -177,7 +180,6 @@ a {
   padding: 12px 25px;
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: white;
-  font-size: 18px;
   border-radius: 10px;
   letter-spacing: 2px;
   position: relative;
@@ -232,8 +234,8 @@ a {
   text-align: center;
   color: black;
   margin: 50px 0;
-  padding: 0 20px;
-  font-size: 60px;
+  padding: 20px;
+  font-size: 36px;
   letter-spacing: 5px;
   position: relative;
   animation: fadeIn 0.8s ease-out;
@@ -246,7 +248,7 @@ a {
 .deals h2::after {
   content: '';
   display: block;
-  width: 200px;
+  width: 150px;
   height: 4px;
   background: aqua;
   margin: auto;
@@ -257,7 +259,6 @@ span {
   color: aqua;
 }
 
-/* About section with animations */
 .about-content {
   width: 95%;
   margin: auto;
@@ -277,13 +278,12 @@ span {
 }
 
 .about-text h3 {
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 3px;
 }
 
-.about-text p {
-  font-size: 22px;
-  line-height: 1.35;
+p {
+  line-height: 1.6;
 }
 
 .image-about {
@@ -335,20 +335,16 @@ span {
 }
 
 .box-services h3 {
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
-.box-services p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 .box-services i {
-  font-size: 6vh;
+  font-size: 40px;
   color: aqua;
   transition: all 0.5s ease;
   animation: float 3s ease-in-out infinite;
+  -webkit-animation: float 3s ease-in-out infinite;
 }
 
 .box-services:hover {
@@ -399,7 +395,7 @@ span {
 .box-featured h3 {
   text-align: center;
   padding-top: 10px;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
@@ -428,7 +424,6 @@ span {
   padding: 10px 20px;
   transition: all 0.5s ease;
   color: white;
-  font-size: 18px;
   border-radius: 10px;
   margin: auto;
   margin-top: 10px;
@@ -483,7 +478,7 @@ form {
   outline: none;
   padding: 10px;
   border: 2px solid aqua;
-  font-size: 3vh;
+  font-size: 18px;
   width: 50%;
   max-width: 400px;
   transition: all 0.3s ease;
@@ -499,7 +494,7 @@ form {
   border: 2px solid aqua;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 3vh;
+  font-size: 18px;
   background-color: aqua;
   color: black;
   transition: all 0.3s ease;
@@ -520,7 +515,7 @@ form {
 }
 
 .social-media-footer {
-  font-size: 5vh;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -556,6 +551,9 @@ form {
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
+  .content {
+  background-attachment: fixed;
+}
   .nav-bar ul,
   .social-media {
     display: flex;
